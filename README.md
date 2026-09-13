@@ -1,16 +1,83 @@
-# React + Vite
+# Silent SOS 🚨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Silent SOS is a web-based emergency safety application designed to help users quickly send an SOS alert and manage their emergency contacts.
 
-Currently, two official plugins are available:
+The application provides a simple and accessible interface where users can trigger an emergency alert using a press-and-hold SOS button, manage emergency contacts, view alert history, and control safety-related settings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+https://silent-sos-sigma.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🚨 Press-and-hold SOS button to trigger an emergency alert
+- ⏱️ SOS progress indicator during activation
+- 📍 Location sharing using browser geolocation
+- 👥 Add, edit, delete and manage emergency contacts
+- ⭐ Set a primary emergency contact
+- 📊 Dynamic emergency contact count
+- 📋 View previous emergency alerts
+- ✅ Mark alerts as resolved
+- 🗑️ Clear alert history
+- 👤 Edit and manage user profile
+- ⚙️ Safety and application settings
+- 💾 LocalStorage-based data persistence
+- 📱 Responsive design for different screen sizes
+- 🧭 React-based navigation between application pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖥️ Application Pages
+
+- Landing Page
+- Login
+- Register
+- Dashboard
+- Emergency Contacts
+- Alert History
+- Profile
+- Settings
+
+## 🛠️ Technologies Used
+
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- Lucide React Icons
+- Browser Geolocation API
+- LocalStorage
+- Git & GitHub
+- Vercel
+
+## 📁 Project Structure
+
+```text
+silent-sos/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   └── Navbar.jsx
+│   │
+│   ├── pages/
+│   │   ├── LandingPage.jsx
+│   │   ├── LoginPage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   ├── EmergencyContactsPage.jsx
+│   │   ├── AlertHistory.jsx
+│   │   ├── ProfilePage.jsx
+│   │   └── SettingsPage.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── vercel.json
+└── README.md
